@@ -27,12 +27,11 @@ def map_to_square(source_array)
 end
 
 def reduce_to_total(source_array, starting_point = 0)
-  index = starting_point
+  index = 0
   length = source_array.length
-  total = 0
+  total = starting_point
   while index < length do
     total += source_array[index]
-    puts "total: #{total} index: #{index}: #{source_array[index]}"
     index += 1
   end
   total
